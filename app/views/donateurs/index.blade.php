@@ -2,9 +2,9 @@
 
 @section('main')
 
-<h1>All Donateurs</h1>
+<h1>Liste des Donateurs</h1>
 
-<p>{{ link_to_route('donateurs.create', 'Add new donateur') }}</p>
+<p>{{ link_to_route('donateurs.create', 'Ajouter un donateur') }}</p>
 
 @if ($donateurs->count())
     <table class="table table-striped table-bordered">
@@ -29,7 +29,7 @@
         </tbody>
     </table>
 @else
-    There are no donateurs
+    Il n'y a pas de donateurs
 @endif
 
 @stop

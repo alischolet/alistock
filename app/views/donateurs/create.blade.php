@@ -2,7 +2,7 @@
 
 @section('main')
 
-<h1>Create Donateur</h1>
+<h1>Créer un Donateur</h1>
 
 {{ Form::open(array('route' => 'donateurs.store')) }}
     <ul>
@@ -12,7 +12,7 @@
         </li>
 
         <li>
-            {{ Form::submit('Submit', array('class' => 'btn')) }}
+            {{ Form::submit('Valider', array('class' => 'btn')) }}
         </li>
     </ul>
 {{ Form::close() }}

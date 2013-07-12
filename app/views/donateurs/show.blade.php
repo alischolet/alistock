@@ -2,9 +2,9 @@
 
 @section('main')
 
-<h1>Show Donateur</h1>
+<h1>Un Donateur</h1>
 
-<p>{{ link_to_route('donateurs.index', 'Return to all donateurs') }}</p>
+<p>{{ link_to_route('donateurs.index', 'Retour à la liste des donateurs') }}</p>
 
 <table class="table table-striped table-bordered">
     <thead>

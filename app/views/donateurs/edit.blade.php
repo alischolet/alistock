@@ -2,7 +2,7 @@
 
 @section('main')
 
-<h1>Edit Donateur</h1>
+<h1>Modification du Donateur</h1>
 {{ Form::model($donateur, array('method' => 'PATCH', 'route' => array('donateurs.update', $donateur->id))) }}
     <ul>
         <li>
