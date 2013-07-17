@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
                     <p>{{ Session::get('message') }}</p>
                 </div>
             @endif
+            {{link_to('/','Accueil')}}
 
             @yield('main')
         </div>
