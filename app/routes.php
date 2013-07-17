@@ -22,3 +22,5 @@ Route::resource('donateurs', 'DonateursController');
 Route::resource('fabricants', 'FabricantsController');
 
 Route::resource('modeles', 'ModelesController');
+
+Route::resource('materiels', 'MaterielsController');
