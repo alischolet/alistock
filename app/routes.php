@@ -24,3 +24,9 @@ Route::resource('fabricants', 'FabricantsController');
 Route::resource('modeles', 'ModelesController');
 
 Route::resource('materiels', 'MaterielsController');
+
+Route::resource('typemateriels', 'TypematerielsController');
+
+Route::resource('unites', 'UnitesController');
+
+Route::resource('typemateriels', 'TypematerielsController');

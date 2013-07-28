@@ -33,7 +33,15 @@ class MaterielsController extends BaseController {
      */
     public function create()
     {
-        return View::make('materiels.create');
+         $typeMateriel = Typemateriel::lists('libelle','id');
+        if (empty($typeMateriel)) {
+            return Redirect::route('typemateriels.create')
+            ->with('message', "Il n'y a aucun type de matériel. Créer en un ensuite ajouter un matériel");
+        }
+
+        $unites = Unite::lists('libelle','id');
+
+        return View::make('materiels.create',compact('typeMateriel'),compact('unites'));
     }
 
     /**

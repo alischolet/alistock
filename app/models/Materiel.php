@@ -4,6 +4,7 @@ class Materiel extends Eloquent {
     protected $guarded = array();
 
     public static $rules = array(
-		'libelle' => 'required'
+		'capacite' => 'required',
+		'idUnite' => 'required'
 	);
 }

@@ -7,8 +7,23 @@
 {{ Form::open(array('route' => 'materiels.store')) }}
     <ul>
         <li>
+            {{ Form::label('typeMateriel', 'Type de matériel:') }}
+            {{ Form::select('idTypeMat',$typeMateriel) }}
+        </li>
+        
+        <li>
             {{ Form::label('libelle', 'Libelle:') }}
             {{ Form::text('libelle') }}
+        </li>
+
+        <li>
+            {{ Form::label('capacite', 'Capacite:') }}
+            {{ Form::text('capacite') }}
+        </li>
+
+        <li>
+            {{ Form::label('unité', 'Unité:') }}
+            {{ Form::select('idUnite',$unites) }}
         </li>
 
         <li>

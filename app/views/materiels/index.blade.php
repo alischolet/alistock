@@ -11,6 +11,9 @@
         <thead>
             <tr>
                 <th>Libelle</th>
+				<th>Capacite</th>
+				<th>IdTypeMat</th>
+				<th>IdUnite</th>
             </tr>
         </thead>
 
@@ -18,6 +21,9 @@
             @foreach ($materiels as $materiel)
                 <tr>
                     <td>{{{ $materiel->libelle }}}</td>
+					<td>{{{ $materiel->capacite }}}</td>
+					<td>{{{ $materiel->idTypeMat }}}</td>
+					<td>{{{ $materiel->idUnite }}}</td>
                     <td>{{ link_to_route('materiels.edit', 'Edit', array($materiel->id), array('class' => 'btn btn-info')) }}</td>
                     <td>
                         {{ Form::open(array('method' => 'DELETE', 'route' => array('materiels.destroy', $materiel->id))) }}
