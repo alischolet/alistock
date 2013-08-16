@@ -13,5 +13,20 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('accueil');
 });
+
+
+Route::resource('donateurs', 'DonateursController');
+
+Route::resource('fabricants', 'FabricantsController');
+
+Route::resource('modeles', 'ModelesController');
+
+Route::resource('materiels', 'MaterielsController');
+
+Route::resource('typemateriels', 'TypematerielsController');
+
+Route::resource('unites', 'UnitesController');
+
+Route::resource('typemateriels', 'TypematerielsController');
